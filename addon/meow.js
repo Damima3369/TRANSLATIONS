@@ -100,6 +100,22 @@
         " profile activated": " تم تطبيق ملف التعريف",
         "...": "…"
       };
+    } else if (LANG === 'id') {
+      FRAG = {
+        "Analyzing user apps... (": "Menganalisis aplikasi pengguna... (",
+        "Checking risky apps... (": "Memeriksa aplikasi berisiko... (",
+        " installed packages, ": " paket terinstal, ",
+        "Found ": "Ditemukan ",
+        " user apps": " aplikasi pengguna",
+        "Active: ": "Aktif: ",
+        "Loaded: ": "Dimuat: ",
+        "Mapped ": "Dipetakan ",
+        "Activating ": "Mengaktifkan ",
+        "Applying ": "Menerapkan ",
+        " profile...": " profil...",
+        " profile activated": " profil diaktifkan",
+        "...": "..."
+      };
     }
 
     function tr(s){
