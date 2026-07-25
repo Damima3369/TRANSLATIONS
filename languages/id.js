@@ -891,4 +891,4 @@ window.i18nDict.id = {
   "Verity Mode": "Mode Verity",
   "Build Tags": "Tag Build",
   "Build Type": "Tipe Build"
-x};
+};
