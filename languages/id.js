@@ -146,7 +146,7 @@ window.i18nDict.id = {
   /* KeyboxLoader */
   "Keybox Loader": "Pemuat Keybox",
   "Import and manage keyboxes": "Impor & kelola keybox",
-  "Use AOSP Keybox": "#",
+  "Use AOSP Keybox": "Pake Keybox AOSP",
   "Custom Keybox": "Keybox Kustom",
   "Keybox Status": "Status Keybox",
   "Valid": "Valid",
