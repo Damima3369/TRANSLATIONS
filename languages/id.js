@@ -146,7 +146,7 @@ window.i18nDict.id = {
   /* KeyboxLoader */
   "Keybox Loader": "Pemuat Keybox",
   "Import and manage keyboxes": "Impor & kelola keybox",
-  "Use AOSP Keybox": "Pake Keybox AOSP",
+  "Use AOSP Keybox": "Pake Keybox kedua", // this is SECONDARY, not AOSP, I'll edit the file later but you've to write secondary instead of AOSP
   "Custom Keybox": "Keybox Kustom",
   "Keybox Status": "Status Keybox",
   "Valid": "Valid",
