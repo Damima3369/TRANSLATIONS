@@ -1,5 +1,5 @@
 window.i18nDict = window.i18nDict || {};
-window.i18nDict.$$ = {
+window.i18nDict.id = {
   /* Main Page */
   "Hated By Many, Defeated By None": "Dibenci Banyak, Dikalahkan Nggak Pernah",
   "Integrity Hub": "Pusat Integrity",
