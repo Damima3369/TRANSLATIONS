@@ -146,7 +146,7 @@ window.i18nDict.id = {
   /* KeyboxLoader */
   "Keybox Loader": "Pemuat Keybox",
   "Import and manage keyboxes": "Impor & kelola keybox",
-  "Use AOSP Keybox": "#", // this is SECONDARY, not AOSP, I'll edit the file later but you've to write secondary instead of AOSP
+  "Use AOSP Keybox": "#",
   "Custom Keybox": "Keybox Kustom",
   "Keybox Status": "Status Keybox",
   "Valid": "Valid",
@@ -510,7 +510,7 @@ window.i18nDict.id = {
   "Trusted Execution Environment": "Lingkungan Eksekusi Tepercaya",
   "UI Locked": "UI Terkunci",
   "Updates Channel": "Saluran Update",
-  "Use if keybox is banned": "Gunakan kalau keybox diblokir",
+  "Use if keybox is banned": "Pake kalau keybox diblokir",
   "Validity Period": "Periode Berlaku",
   "View on GitHub": "Lihat di GitHub",
   "Waiting for sync...": "Menunggu sinkron...",
@@ -573,7 +573,7 @@ window.i18nDict.id = {
   "Nuke Lineage": "Hancurkan Lineage",
   "OMK Pixel Device": "Perangkat Pixel OMK",
   "OTA Fix": "Perbaikan OTA",
-  "Prevents spoofing of the security patch date. Use if banking apps detect patch mismatch. Disabling this can cause play integrity failure on old ROMs/Android versions": "Mencegah spoofing tanggal patch keamanan. Gunakan kalau aplikasi banking deteksi ketidakcocokan patch. Menonaktifkan ini bisa menyebabkan kegagalan play integrity di ROM/Android versi lama",
+  "Prevents spoofing of the security patch date. Use if banking apps detect patch mismatch. Disabling this can cause play integrity failure on old ROMs/Android versions": "Mencegah spoofing tanggal patch keamanan. Pake kalau aplikasi banking deteksi ketidakcocokan patch. Menonaktifkan ini bisa menyebabkan kegagalan play integrity di ROM/Android versi lama",
   "Removes LSposed framework traces from the system.": "Menghapus jejak framework LSposed dari sistem.",
   "Right Gestures": "Gestur Kanan",
   "Skip System Patch": "Lewati Patch Sistem",
