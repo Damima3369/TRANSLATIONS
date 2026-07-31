@@ -146,7 +146,7 @@ window.i18nDict.ru = {
   /* KeyboxLoader */
   "Keybox Loader": "Загрузчик Keybox",
   "Import and manage keyboxes": "Импорт и управление keybox",
-  "Use AOSP Keybox": "Использовать AOSP Keybox",
+  "Use AOSP Keybox": "Использовать второй Keybox",
   "Custom Keybox": "Пользовательский Keybox",
   "Keybox Status": "Статус Keybox",
   "Valid": "Действителен",
@@ -685,7 +685,7 @@ window.i18nDict.ru = {
   "Which modules should I combine with Integrity‑Box to maximize banking‑app compatibility?": "Какие модули стоит сочетать с IntegrityBox для работы банковских приложений?",
   "A commonly recommended setup is:": "Рекомендуемый сетап:",
   "Integrity‑Box (for props/keybox spoofing)": "• IntegrityBox (для спуфинга props/keybox)",
-  "Clean Zygote injection layer (e.g. Zygisk Next)": "• Чистый слой инъекции Zygote (например, Zygisk Next)",
+  "Clean zygote injection layer (e.g. Zygisk Next)": "• Чистый слой инъекции Zygote (например, Zygisk Next)",
   "DenyList / Hide‑Magisk‑Manager (so root‑manager app isn’t visible) or use spoofed version of KSU manager": "• DenyList / Скрытый Magisk или подменённый KSU Manager",
   "Clear Play Store + Google Services data after flashing/patching": "• Очистка данных Play Маркета и Сервисов Google после прошивки",
   "Reboot and test using Play Integrity checker/app": "• Перезагрузка и проверка через приложение Play Integrity Checker",
