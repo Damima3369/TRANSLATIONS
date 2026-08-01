@@ -116,6 +116,22 @@
         " profile activated": " profil diaktifkan",
         "...": "..."
       };
+    } else if (LANG === 'ru') {
+      FRAG = {
+        "Analyzing user apps... (": "Анализ приложений пользователя... (",
+        "Checking risky apps... (": "Проверка рискованных приложений... (",
+        " installed packages, ": " установленных пакетов, ",
+        "Found ": "Найдено ",
+        " user apps": " пользовательских приложений",
+        "Active: ": "Активно: ",
+        "Loaded: ": "Загружено: ",
+        "Mapped ": "Сопоставлено ",
+        "Activating ": "Активация ",
+        "Applying ": "Применение ",
+        " profile...": " профиля...",
+        " profile activated": " профиль активирован",
+        "...": "..."
+      };
     }
 
     function tr(s){
