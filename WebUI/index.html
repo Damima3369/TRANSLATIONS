@@ -131,18 +131,13 @@
             </div>
             <svg class="row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
           </button>
-        </div>
-      </section>
-      <section class="list-section">
-        <h2 class="section-title">Resources</h2>
-        <div class="list">
-          <button class="list-row" data-script="downloader" data-type="downloader">
+          <button class="list-row" data-type="addon">
             <div class="row-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <div class="row-text">
-              <span class="row-title">Integrity Downloader</span>
-              <span class="row-sub">Useful tools and files</span>
+              <span class="row-title">Customize Scope</span>
+              <span class="row-sub">Addon for dependencies</span>
             </div>
             <svg class="row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
           </button>
@@ -227,6 +222,14 @@
             <div class="side-picker"><button id="gesture-left" class="side-option">L</button><button id="gesture-right" class="side-option">R</button></div>
           </div>
         </div>
+        <div class="backup-panel" id="backup-restore-panel">
+          <div class="backup-panel-heading"><span class="row-title">Backup &amp; Restore</span><span class="row-sub">Save or restore Interface settings and module configuration</span></div>
+          <button class="backup-action" id="create-backup" type="button">Create Backup</button>
+          <button class="backup-action secondary" id="choose-backup" type="button">Restore Backup</button>
+          <input id="backup-file-input" type="file" accept=".json,application/json" hidden>
+          <div class="backup-selected" id="backup-selected">No backup file selected</div>
+          <p class="settings-note">Restoring replaces matching files only. Files not present in the backup are left untouched.</p>
+        </div>
         <p class="settings-note">When Floating back button is enabled, edge back gestures are disabled automatically for opened iframe tools.</p>
       </section>
       </div>
@@ -266,7 +269,22 @@
 
     <div class="tab-panel" id="tab-tools">
       <header class="tab-header"><h1>Tools</h1></header>
-            <section class="list-section">
+      <section class="list-section">
+        <h2 class="section-title">Resources</h2>
+        <div class="list">
+          <button class="list-row" data-script="downloader" data-type="downloader">
+            <div class="row-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <div class="row-text">
+              <span class="row-title">Integrity Downloader</span>
+              <span class="row-sub">Useful tools and files</span>
+            </div>
+            <svg class="row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </section>
+      <section class="list-section">
         <h2 class="section-title">Keybox</h2>
         <div class="list">
           <button class="list-row" data-type="pilot">
@@ -334,34 +352,18 @@
             </div>
             <svg class="row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
           </button>
-        </div>
-      </section>
-      <section class="list-section">
-        <h2 class="section-title">Maintenance</h2>
-        <div class="list">
-          <button class="list-row" data-type="hash">
+          <button class="list-row" data-script="omk" data-type="omk">
             <div class="row-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             </div>
             <div class="row-text">
-              <span class="row-title">Fix Boot Hash</span>
-              <span class="row-sub">Repair abnormal boot hash</span>
-            </div>
-            <svg class="row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          </button>
-          <button class="list-row" data-type="hide">
-            <div class="row-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
-            </div>
-            <div class="row-text">
-              <span class="row-title">Hide Sus Files</span>
-              <span class="row-sub">Obfuscate basic suspicious paths</span>
+              <span class="row-title">Setup OMK</span>
+              <span class="row-sub">This feature is for OhMyKeymint module users</span>
             </div>
             <svg class="row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
           </button>
         </div>
       </section>
-
     </div>
 
     <div class="tab-panel" id="tab-more">
@@ -396,7 +398,32 @@
         </div>
       </section>
       <section class="list-section">
-        <h2 class="section-title">Testing</h2>
+        <h2 class="section-title">Maintenance</h2>
+        <div class="list">
+          <button class="list-row" data-type="hash">
+            <div class="row-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="row-text">
+              <span class="row-title">Fix Boot Hash</span>
+              <span class="row-sub">Repair abnormal boot hash</span>
+            </div>
+            <svg class="row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+          <button class="list-row" data-type="hide">
+            <div class="row-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </div>
+            <div class="row-text">
+              <span class="row-title">Hide Sus Files</span>
+              <span class="row-sub">Obfuscate basic suspicious paths</span>
+            </div>
+            <svg class="row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </section>
+      <section class="list-section">
+        <h2 class="section-title">Experiment Features</h2>
         <div class="list">
           <button class="list-row" data-type="conflict">
             <div class="row-icon">
@@ -405,6 +432,16 @@
             <div class="row-text">
               <span class="row-title">Conflict Resolver</span>
               <span class="row-sub">Fix Multiple ROOT implementation</span>
+            </div>
+            <svg class="row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+          <button class="list-row" data-type="blog">
+            <div class="row-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="row-text">
+              <span class="row-title">Read Blogs and Guides</span>
+              <span class="row-sub">This comes in English only</span>
             </div>
             <svg class="row-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
           </button>
@@ -526,6 +563,29 @@
         <button class="small-action reset-confirm-button" id="reset-ui-confirm-button" type="button">Confirm</button>
       </div>
     </div>
+  </div>
+
+  <div id="backup-confirm-overlay" class="backup-confirm-overlay" hidden>
+    <section class="backup-confirm-card" role="dialog" aria-modal="true" aria-labelledby="backup-confirm-title">
+      <div class="backup-confirm-head">
+        <div class="backup-confirm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 17v3h14v-3"/></svg></div>
+        <div class="backup-confirm-heading"><h2 id="backup-confirm-title">Review backup restoration</h2><p id="backup-confirm-filename">Selected backup</p></div>
+        <button type="button" class="backup-confirm-close" id="backup-confirm-close" aria-label="Close">×</button>
+      </div>
+      <p class="backup-confirm-warning">Changes are non-reversible. Please check everything before clicking on restore button.</p>
+      <div class="backup-restore-scope" aria-label="Restore destinations">
+        <div class="backup-scope-item"><span class="backup-scope-icon">UI</span><div><strong>Interface preferences</strong><small>Restores saved UI settings</small></div></div>
+        <div class="backup-scope-item"><span class="backup-scope-icon">BB</span><div><strong>Box-Brain configuration</strong><small>Restores included flags and blacklist</small></div></div>
+        <div class="backup-scope-item"><span class="backup-scope-icon">PIF</span><div><strong>PIF configuration</strong><small>Restores included PIF files</small></div></div>
+      </div>
+      <div class="backup-preview-section"><h3>INCOMING INTERFACE SETTINGS</h3><div id="backup-preview-settings" class="backup-preview-list"></div></div>
+      <div class="backup-preview-section"><h3>INCOMING MODULE SETTINGS</h3><div id="backup-preview-flags" class="backup-preview-list"></div></div>
+      <div class="backup-preview-section"><h3>BLACKLISTED APP LIST</h3><div id="backup-preview-blacklist" class="backup-preview-list"></div></div>
+      <div class="backup-confirm-actions">
+        <button type="button" class="backup-confirm-button secondary" id="backup-restore-cancel">Cancel</button>
+        <button type="button" class="backup-confirm-button primary" id="backup-restore-confirm">Restore backup</button>
+      </div>
+    </section>
   </div>
 
   <div id="modal-backdrop" class="hidden">
